@@ -1,12 +1,16 @@
-import { View, Text } from 'react-native'
+import { View, Text, StatusBar, Platform } from 'react-native'
 import React from 'react'
+import styled from 'styled-components/native'
+import RootNavigation from './src/screens/navigation/RootNavigation'
 
 const App = () => {
   return (
-    <View className='flex-1 justify-center items-center bg-neutral-800'>
-      <Text className='text-white font-bold'>Hello world</Text>
-    </View>
+    <Container>
+        <StatusBar barStyle={Platform.OS=="android"?'default':'default'}></StatusBar>
+        <RootNavigation></RootNavigation>
+    </Container>
   )
 }
+const Container = styled(View)`flex:1`
 
 export default App
