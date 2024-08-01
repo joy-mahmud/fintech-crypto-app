@@ -1,0 +1,2 @@
+declare '*.png'
+declare '*.jpg'
