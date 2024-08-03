@@ -33,8 +33,8 @@ const SplashScreen = () => {
             <Animated.View
                 entering={FadeInRight.duration(100).delay(200).springify()}
                 className='flex-row justify-center items-center'>
-                <Text className='uppercase leading-[60px] text-neutral-600 text-xl'>stacks </Text>
-                <Text className='uppercase leading-[60px] text-[#41eb5b] text-xl'>crypto</Text>
+                <Text style={{fontFamily:'PlusJakartaBold'}} className='uppercase leading-[60px] text-neutral-600 text-xl'>stacks </Text>
+                <Text style={{fontFamily:'PlusJakartaBoldItalic'}} className='uppercase leading-[60px] text-[#41eb5b] text-xl'>crypto</Text>
             </Animated.View>
             </View>
         </SafeAreaView>
